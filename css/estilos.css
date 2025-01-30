@@ -1,0 +1,287 @@
+/* Reglas generales */
+
+/* Definimos las variables */
+
+:root {
+    --font-sans-serif: "Helvetica", "Arial", sans-serif;
+    --font-serif: "Georgia", "Times", serif;
+    --color-negro: #000000;
+    --color-rojo: #ff0000;
+    --color-blanco: white;
+    --color-texto: #404040;
+  }
+  
+  /* Reset margins and paddings */
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Bloques generales de la plantilla */
+  
+  body {
+    margin: 0;
+    color: var(--color-texto);
+    font-family: var(--font-sans-serif);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: var(--color-blanco);
+  }
+  
+  .encabezado {
+    width: 100%;
+    background-color: var(--color-negro);
+    padding: 2% 4%;
+  }
+  
+  .encabezado .logo-sitio {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+  
+  .encabezado .menu-navegacion {
+    text-align: center;
+  }
+  
+  .lista-navegacion {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .lista-navegacion li {
+    display: block;
+    margin-bottom: 1%;
+  }
+  
+  .lista-navegacion a {
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-weight: normal;
+  }
+  
+  .lista-navegacion li.current-page a {
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .resaltado {
+    font-weight: bold;
+  }
+  
+  .resaltado-rojo {
+    color: var(--color-rojo);
+  }
+  
+  .cursiva {
+    font-family: var(--font-serif);
+    font-style: italic;
+  }
+  
+  .articulo-titulo {
+    font-size: 1.7rem;
+    padding: 3% 0;
+    text-align: center;
+  }
+  
+  footer {
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 5%;
+    background-color: var(--color-negro);
+    font-weight: normal;
+  }
+  
+  /* Page inicio */
+  
+  .page-inicio {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .imagen-articulo {
+    max-width: 100%;
+  }
+  
+  .nombre-autor {
+    font-size: 0.7rem;
+  }
+  
+  .articulo-fecha {
+    font-size: 0.7rem;
+    padding: 0 0 3% 0;
+  }
+  
+  .imagen-autor {
+    font-size: 0.7rem;
+    text-align: right;
+    padding: 0 0 0 3%;
+  }
+  
+  .subtitulo {
+    text-align: left;
+    margin-top: 3%;
+  }
+  
+  .seccion-articulo {
+    width: 100%;
+    padding: 0;
+  }
+  
+  .seccion-articulo p {
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    text-align: justify;
+  }
+  
+  .seccion-lista {
+    padding-left: 5%;
+  }
+  
+  .video {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    margin: auto;
+    padding-bottom: 3%;
+  }
+  
+  .video iframe {
+   display: block;
+   width: 100%;
+   height: 315px;
+   border: none;
+  }
+  
+  .video-footer {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: right;
+    position: absolute;
+  }
+  
+  .referencia-autor {
+    padding-top: 3%;
+  }
+  
+  .referencia-autor p {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding: initial;
+    font-size: 0.7rem;
+    background-color: #f4f4f4;
+  }
+  
+  .referencia-autor img {
+    display: block;
+    margin: 10px auto;
+    border-radius: 50%;
+  }
+  
+  .biografia .mayusculas {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .biografia p {
+    padding: 3% 10%;
+  }
+  
+  /* Page tipos de robots */
+  
+  .page-tipos {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  
+  blockquote {
+    font-family: var(--font-serif);
+    background-color: #f4f4f4;
+    border-left: 5px solid red;
+  }
+  
+  blockquote p {
+    padding: 3% 3%;
+  }
+  
+  section {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-left: 7%;
+  }
+  
+  .lista-tipos li {
+    list-style-image: url("../img/icon-robot.png");
+    margin-bottom: 1em;
+  }
+  
+  .sublista li {
+    list-style: none;
+    list-style-type: square;
+    margin-left: 10%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .sub-sublista li {
+    list-style: none;
+    list-style-type: disc;
+    margin-left: 12%;
+  }
+  
+  /* Page robots de ficcion */
+  
+  .page-ficcion {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  
+  .page-ficcion .titulo {
+    font-size: 1.7rem;
+    padding-top: 3%;
+    padding-bottom: 0;
+    text-align: center;
+  }
+  
+  .lista-descrip {
+    padding-top: 0;
+    padding-bottom: 5%;
+  }
+  
+  .titulo-descrip {
+    text-align: left;
+    margin-top: 3%;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .descrip p {
+    padding: 1.5% 0;
+    text-align: justify;
+  }
+  
+  .img-ficcion {
+    width: 65%;
+    display: block;
+    margin: 10px auto;
+  }
+  
+  .descrip p:last-child {
+    text-align: center;
+  }
+  
+  /* Media query para pantalla pequeñas*/
+  @media (max-width: 767px) {
+    main {
+      font-size: 0.8rem;
+      overflow: auto;
+    }
+  }
